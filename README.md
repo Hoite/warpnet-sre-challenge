@@ -9,6 +9,8 @@ Your goal is to deploy the included Python application directly in a local Kuber
 You can use to following command to start the application:
 ```bash
 cd app
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 flask --app application run
 ```
