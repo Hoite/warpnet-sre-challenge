@@ -10,8 +10,8 @@ This document provides a soloution for the 3 scenarios.
 
 ## Starting a local cluster
 
-In this soloution uses `minikube` as a local cluster soloution. You are allowed
-to deploy it on any cluster of you choosing.
+In this solution uses `minikube` as a local cluster solution. You are allowed
+to deploy it on any cluster of your choosing.
 
 Install minikube from: https://minikube.sigs.k8s.io/docs/start/
 
@@ -19,7 +19,7 @@ Install minikube from: https://minikube.sigs.k8s.io/docs/start/
 $ minikube start
 ```
 
-## Building and uplaoding the image to minikube
+## Building and uploading the image to minikube
 
 ```bash
 docker build -t sre-challenge -f solution/supporting-files/Dockerfile .
@@ -27,7 +27,7 @@ docker image save -o image.tar sre-challenge
 minikube image load image.tar
 ```
 
-Or, build it directlly in minikube:
+Or, build it directly in minikube:
 
 ```bash
 minikube image build -t sre-challenge -f solution/supporting-files/Dockerfile .
