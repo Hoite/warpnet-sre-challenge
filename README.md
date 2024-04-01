@@ -117,6 +117,14 @@ Or, build it directly in minikube:
 minikube image build -t sre-challenge -f solution/supporting-files/Dockerfile .
 ```
 
+### Use online version (public for challenge)
+> Docker image online available at hoite/sre-challenge
+> https://hub.docker.com/repository/docker/hoite/sre-challenge/
+
+```bash
+docker pull hoite/sre-challenge
+```
+
 ## Deploying application
 
 ```bash
