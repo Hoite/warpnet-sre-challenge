@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% block title %}Login{% endblock %}
+{% block title %}Register{% endblock %}
 {% block content %}
 <main class="container form-signin text-center">
     <form action="" method="post">
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <h1 class="h3 mb-3 fw-normal">Register</h1>
         {{ form.hidden_tag() }}
         <div class="form-floating">
             <input type="text" class="form-control" id="username" placeholder="Username" name="{{ form.username.name }}">
@@ -13,7 +13,7 @@
             <input type="password" class="form-control" id="password" placeholder="Password" name="{{ form.password.name }}">
             <label for="password">Password</label>
         </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit" name="{{ form.submit.name }}">Login</button>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" name="{{ form.submit.name }}">Register</button>
     </form>
 
     {% with messages = get_flashed_messages(with_categories=true) %}
