@@ -79,6 +79,8 @@ Open a browser and go to http://192.168.13.37:5000
 8. db in git
     - Contains plain-text password
 
+- Created register page
+
 ## Wants
 I ran out of time, i was planning:
 - A script that initializes the SECRET_KEY and database creation
