@@ -2,7 +2,6 @@ import os
 from flask                  import Flask, flash, render_template, url_for, redirect
 from flask_sqlalchemy       import SQLAlchemy
 from flask_login            import UserMixin, LoginManager, login_user, login_required, logout_user, current_user
-# from sqlalchemy.sql         import func
 from flask_wtf              import FlaskForm
 from wtforms                import StringField, PasswordField, SubmitField
 from wtforms.validators     import InputRequired, Length, ValidationError
@@ -29,7 +28,7 @@ def load_user(user_id): # Login Manager logic
 # Create User Model
 class User(db.Model, UserMixin):
     id          = db.Column(db.Integer, primary_key=True)
-    username    = db.Column(db.String(15), unique=True, nullable=False) # Username must me unique
+    username    = db.Column(db.String(15), unique=True, nullable=False) # Username must be unique
     password    = db.Column(db.String(80), nullable=False)
 
 # Classes for Forms
@@ -66,6 +65,7 @@ with app.app_context(): # Create the database
     db.create_all()
 
 # Routes
+# Index Route
 @app.route("/")
 def index():
     return render_template("index.html", is_authenticated=is_authenticated()) # Render index page passing is_authenticated variable to HTML template

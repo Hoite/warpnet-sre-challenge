@@ -59,7 +59,7 @@ Open a browser and go to http://192.168.13.37:5000
 # 2. Fixing the application code
 ## Problems
 1. Secret Key
-    - Static (did not fix)
+    - Static (did not fix, generated new one instead)
     - Is default static key from Flask documentation (fixed)
 2. Passwords (fixed)
     - Plain-text
@@ -76,8 +76,8 @@ Open a browser and go to http://192.168.13.37:5000
     - No protection against brute-force
 7. TLS (not fixed)
     - No built-in TLS (fixed in deployment)
-8. db in git
-    - Contains plain-text password
+8. db in git (Because challenge && completion still here)
+    - Contains plain-text password (fixed)
 
 - Created register page
 
