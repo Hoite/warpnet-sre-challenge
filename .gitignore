@@ -163,6 +163,5 @@ cython_debug/
 .vscode
 
 # Hoite Files
-solution/
 .DS_Store
 app/.DS_Store
