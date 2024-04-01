@@ -16,6 +16,7 @@ python3 solution/supporting-files/genkey.py
 ```
 > Add the generated secret key to app.py on "CHANGEME!".
 
+2. Run Application
 You can use to following command to start the application:
 
 ```bash
