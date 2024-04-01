@@ -1,7 +1,7 @@
 # Warpnet SRE-challenge
 > Author: Hoite Prins, hj.prins@alfa-college.nl
 
-This document provides a soloution for the 3 scenarios.
+This document provides a solution for the 3 scenarios.
 
 1. Running the application in a VM
 2. Fix the application code
@@ -44,10 +44,19 @@ pip install -r requirements.txt
 flask --app application run
 ```
 
-# 1. Running the application in a VM
+# 1. Running the application in a VM (Vagrant)
+
+Built for:
+- Mac OS
+- ARM64
+- VMware Fusion
+
+```bash
+vagrant up
+```
+Open a browser and go to http://192.168.13.37:5000
 
 # 2. Fixing the application code
-
 ## Problems
 1. Secret Key
     - Static (did not fix)
